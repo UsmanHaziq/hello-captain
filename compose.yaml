@@ -1,0 +1,9 @@
+
+services:
+  hello-captain:
+    build: .
+    command: ["echo", "Good work haziq!"]
+    develop:
+      watch:
+        - action: rebuild
+          path: ./Dockerfile
